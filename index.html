@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Introduction</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .logo {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .logo img {
+        height: auto;
+        vertical-align: middle;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 50px;
+        margin-left: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      
+      }
+      #a{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+    
+      }
+      #a button{
+        background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+      }
+
+      .hero {
+        background-image: url("hero-bg.jpg"); /* Replace with your actual hero image */
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+        color: black;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .development,
+      .sales,
+      .ceo {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .development img,
+      .sales img,
+      .ceo img,
+      .team img {
+        width: 100%; 
+        max-width: 600px; 
+        border-radius: 10px; 
+        margin-bottom: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .social-links img {
+        width: 30px;
+        margin: 0 5px;
+      }
+
+      .trial-content {
+        background-color: #f2f2f2;
+        padding: 50px 0;
+      }
+
+      .trial-content p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto 20px;
+        line-height: 1.6;
+      }
+
+    
+      .trial-content .trial-button:hover {
+        background-color: #0056b3;
+      }
+     
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+   
+      .stats {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .stats h2 {
+        margin-bottom: 20px;
+      }
+
+      .stats-item {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .stat {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+     
+      @keyframes floatIn {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .slider {
+        max-width: 100%;
+        height: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        flex: 0 0 100%;
+      }
+
+    
+      .slide img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+    
+      .slider-controls {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .slider-controls button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0 5px;
+        color: #007bff;
+      }
+
+    
+      @keyframes floatIn {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://media.licdn.com/dms/image/C560BAQGkAKzDIE5A2A/company-logo_200_200/0/1631376167992?e=2147483647&v=beta&t=68lzqHRp4rfP85pOoBoSdNlUDqhzO_jJ-TuQx5xERP4"
+          alt="Company Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://www.indianic.com/">Home</a></li>
+          <li><a href="https://www.indianic.com/about/">About</a></li>
+          <li><a href="https://www.indianic.com/what-we-do/">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="https://media.glassdoor.com/l/ef/13/03/09/working-place.jpg" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="https://media.glassdoor.com/l/87/25/74/69/gaming-zone.jpg" alt="Slide 2" />
+          </div>
+        </div>
+      </section>
+  
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button id="prevSlide">&#10094;</button>
+        <button id="nextSlide">&#10095;</button>
+      </div>
+  
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Company</h1>
+        <p>Leading in innovation and development</p>
+      </div>
+    </section>
+    <section class="development">
+      <img
+        src="https://dcdh7ea8gkhvt.cloudfront.net/wp-content/uploads/2023/05/hm-video-bg.webp"
+        alt="Development Area"
+      />
+      <p>We excel in cutting-edge technology and development processes.</p>
+    </section>
+    <section class="trial-content">
+      <div>
+        <p>
+          Managing a remote team while outsourcing requires capable and
+          experienced leadership. Our more than two decades of experience
+          guarantees successful project delivery every single time.
+        </p>
+        <p>
+          Start with our 7-day free trial for a dedicated team, or get 100%
+          money-back if you don’t like our work within the first week itself.
+        </p>
+        <a id="a" class="trial-button"><button>Start Free Trial</button></a>
+      </div>
+    </section>
+
+    <section class="sales">
+      <img
+        src="https://media.glassdoor.com/lst2x/9c/84/18/8d/indianic-games-division-gameanax.jpg"
+        alt="Sales Area"
+      />
+      <p>Our sales team is dedicated to delivering exceptional results.</p>
+    </section>
+
+    <section class="ceo">
+      <img
+        src="https://media.licdn.com/dms/image/C5603AQGz6l12QB5snw/profile-displayphoto-shrink_200_200/0/1517661856832?e=2147483647&v=beta&t=g_GPK8TXDMa6vsbCxzf8IrAyK3Tb9W4EzonPth6DD58"
+        alt="CEO"
+      />
+      <div class="ceo-info">
+        <h2>Meet Our CEO</h2>
+        <p>Sandeep Mundra is a visionary leader with a passion for innovation.</p>
+      </div>
+    </section>
+
+   
+    <section class="stats">
+        <h2>Our Achievements</h2>
+        <div class="stats-item">
+          <div class="stat">
+            <h3>3000+</h3>
+            <p>Satisfied Clients Across the Globe</p>
+          </div>
+          <div class="stat">
+            <h3>7000+</h3>
+            <p>Projects Delivered Successfully</p>
+          </div>
+          <div class="stat">
+            <h3>600+</h3>
+            <p>Experts Under the Same Roof</p>
+          </div>
+        </div>
+      </section>
+    <footer>
+      <div class="contact-info">
+        <p>Contact us: indianic@company.com</p>
+      </div>
+ 
+   
+    </footer>
+    <script>
+        let slideIndex = 0;
+  
+        
+        function showSlides() {
+          const slides = document.querySelectorAll('.slide');
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+          slides.forEach((slide) => (slide.style.display = 'none'));
+          slides[slideIndex].style.display = 'block';
+        }
+  
+      
+        showSlides();
+  
+    
+        document.getElementById('prevSlide').addEventListener('click', () => {
+          slideIndex -= 1;
+          showSlides();
+        });
+  
+       
+        document.getElementById('nextSlide').addEventListener('click', () => {
+          slideIndex += 1;
+          showSlides();
+        });
+      </script>
+  </body>
+</html>
